@@ -14,7 +14,7 @@ rules: #!replace
   - RULE-SET,telegramcidr,PROXY
   - MATCH,DIRECT
 
-prepend-rules: #!replace
+prepend-rules:
   - DOMAIN-SUFFIX,monitornerds.com,PROXY
   - DOMAIN-SUFFIX,zhina.wiki,PROXY
   - DOMAIN,www.mcbar.cn,PROXY
