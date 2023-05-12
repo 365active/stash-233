@@ -1,10 +1,9 @@
 name: 233 覆写规则
-desc: 
 
 # dns:
 #   enable: false
 
-rules:
+rules: #!replace
   - RULE-SET,applications,DIRECT
   - DOMAIN,clash.razord.top,DIRECT
   - DOMAIN,yacd.haishan.me,DIRECT
@@ -15,7 +14,7 @@ rules:
   - RULE-SET,telegramcidr,PROXY
   - MATCH,DIRECT
 
-prepend-rules:
+prepend-rules: #!replace
   - DOMAIN-SUFFIX,monitornerds.com,PROXY
   - DOMAIN-SUFFIX,zhina.wiki,PROXY
   - DOMAIN,www.mcbar.cn,PROXY
@@ -279,13 +278,3 @@ prepend-rules:
   - DOMAIN-SUFFIX,douban.com,DIRECT
   - DOMAIN-SUFFIX,lncn.org,DIRECT
   - DOMAIN-SUFFIX,cloudflare.com,DIRECT
-
-prepend-proxies:
-
-prepend-proxy-groups:
-
-append-rules:
-
-append-proxies:
-
-append-proxy-groups:
